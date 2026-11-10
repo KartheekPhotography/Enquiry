@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f3ed">
+<title>Kartheek Photography | Let's Plan Your Wedding Story</title>
+<style>
+:root{--ink:#282521;--muted:#77716a;--paper:#fbf9f5;--cream:#eee6da;--gold:#a98253;--line:#e4ddd3;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+.hero{min-height:260px;padding:42px 22px 34px;text-align:center;color:white;background:linear-gradient(180deg,rgba(20,18,16,.22),rgba(20,18,16,.68)),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85') center 48%/cover}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(34px,7vw,56px);line-height:1.05;margin:18px 0 10px}.hero p{max-width:520px;margin:auto;color:#f5eee6}
+.wrap{max-width:720px;margin:-22px auto 50px;padding:0 16px;position:relative}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(20px,5vw,38px);box-shadow:0 18px 60px #2a21130c}
+.brand{text-align:center;color:var(--gold);font:italic 16px Georgia,serif;margin-bottom:22px}.progress-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:9px}.bar{height:4px;background:#eee9e2;border-radius:9px;overflow:hidden}.bar span{display:block;height:100%;background:var(--gold);width:25%;transition:width .25s}
+.step{display:none;animation:fade .25s ease}.step.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:none}}
+h2{font:400 29px/1.15 Georgia,serif;margin:25px 0 7px}.sub{color:var(--muted);font-size:14px;margin:0 0 25px}.field{margin:19px 0}.field label,.legend{display:block;font-size:13px;font-weight:650;margin-bottom:8px}.req{color:#b26e53}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:13px 14px;font:inherit;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #a9825318}textarea{min-height:95px;resize:vertical}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.choice{position:relative}.choice input{position:absolute;opacity:0;pointer-events:none}.choice span{display:block;border:1px solid var(--line);padding:12px;border-radius:10px;text-align:center;font-size:13px;cursor:pointer;transition:.15s}.choice input:checked+span{border-color:var(--gold);background:#f8f2e9;color:#795a36;box-shadow:inset 0 0 0 1px var(--gold)}.choice span:hover{border-color:#c9b394}
+.nav{display:flex;gap:10px;justify-content:space-between;margin-top:28px}.btn{border:0;border-radius:30px;padding:13px 22px;font-weight:650;cursor:pointer;font-size:14px}.primary{background:var(--ink);color:white;flex:1}.secondary{background:#f2eee8;color:var(--ink)}.primary:disabled{opacity:.45;cursor:not-allowed}.note{font-size:12px;color:var(--muted);text-align:center;margin-top:18px}.success{display:none;text-align:center;padding:40px 10px}.success h2{font-size:36px}.success .mark{font-size:42px;color:var(--gold)}.error{display:none;background:#fff2ef;color:#9c3d2b;border-radius:9px;padding:11px;font-size:13px;margin-top:12px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+@media(max-width:420px){.choices{grid-template-columns:1fr}.hero{min-height:235px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="eyebrow">A celebration of your forever</div><h1>Let's Plan Your<br>Wedding Story</h1><p>Tell us a little about your celebration. We'll help you find the photography experience that feels right for you.</p></header>
+<main class="wrap"><section class="panel">
+<div class="brand">Kartheek Photography</div>
+<div id="formArea">
+<div class="progress-top"><span id="stepLabel">STEP 1 OF 4</span><span id="pct">25%</span></div><div class="bar"><span id="progress"></span></div>
+<form id="leadForm" name="wedding-enquiry" method="POST" data-netlify="true" data-netlify-honeypot="_gotcha">\n<input type="hidden" name="form-name" value="wedding-enquiry">
+<input type="hidden" name="_subject" value="New wedding photography enquiry">
+<div style="display:none"><label>Leave this field empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+<div class="step active">
+<h2>First, let's meet you</h2><p class="sub">A few details to help us get to know the couple.</p>
+<div class="field"><label>Couple's names <i class="req">*</i></label><input name="Couple's names" placeholder="e.g. Ananya & Arjun" required></div>
+<div class="field"><label>WhatsApp number <i class="req">*</i></label><input name="WhatsApp number" type="tel" inputmode="tel" placeholder="+91 98765 43210" required></div>
+<div class="field"><label>Email address (optional)</label><input name="Email" type="email" placeholder="you@example.com"></div>
+<div class="field"><label>What are you celebrating? <i class="req">*</i></label><div class="choices">
+<label class="choice"><input type="radio" name="Event type" value="Wedding" required><span>Wedding</span></label>
+<label class="choice"><input type="radio" name="Event type" value="Engagement"><span>Engagement</span></label>
+<label class="choice"><input type="radio" name="Event type" value="Pre-wedding"><span>Pre-wedding</span></label>
+<label class="choice"><input type="radio" name="Event type" value="Other celebration"><span>Other celebration</span></label></div></div>
+</div>
+<div class="step">
+<h2>Tell us about the dates</h2><p class="sub">We'll use these details to check availability and plan coverage.</p>
+<div class="field"><label>Main event date <i class="req">*</i></label><input name="Main event date" type="date" required></div>
+<div class="field"><label>City / venue <i class="req">*</i></label><input name="Event location" placeholder="e.g. Hyderabad, Telangana" required></div>
+<div class="field"><label>Which celebrations need coverage?</label><div class="choices">
+<label class="choice"><input type="checkbox" name="Events to cover" value="Haldi"><span>Haldi</span></label>
+<label class="choice"><input type="checkbox" name="Events to cover" value="Mehendi"><span>Mehendi</span></label>
+<label class="choice"><input type="checkbox" name="Events to cover" value="Engagement"><span>Engagement</span></label>
+<label class="choice"><input type="checkbox" name="Events to cover" value="Wedding"><span>Wedding</span></label>
+<label class="choice"><input type="checkbox" name="Events to cover" value="Reception"><span>Reception</span></label>
+<label class="choice"><input type="checkbox" name="Events to cover" value="Pre-wedding"><span>Pre-wedding</span></label></div></div>
+<div class="field"><label>How many days of coverage do you expect?</label><select name="Coverage duration"><option value="">Choose one</option><option>1 day</option><option>2 days</option><option>3 days</option><option>4+ days</option><option>Not sure yet</option></select></div>
+</div>
+<div class="step">
+<h2>Your photography vision</h2><p class="sub">Every couple has a different story. What feels most like yours?</p>
+<div class="field"><label>Preferred photography style</label><div class="choices">
+<label class="choice"><input type="radio" name="Photography style" value="Candid & cinematic"><span>Candid & cinematic</span></label>
+<label class="choice"><input type="radio" name="Photography style" value="Traditional"><span>Traditional</span></label>
+<label class="choice"><input type="radio" name="Photography style" value="Both"><span>A mix of both</span></label>
+<label class="choice"><input type="radio" name="Photography style" value="Need guidance"><span>Need guidance</span></label></div></div>
+<div class="field"><label>What matters most to you?</label><div class="choices">
+<label class="choice"><input type="checkbox" name="Top priorities" value="Candid moments"><span>Candid moments</span></label>
+<label class="choice"><input type="checkbox" name="Top priorities" value="Cinematic film"><span>Cinematic film</span></label>
+<label class="choice"><input type="checkbox" name="Top priorities" value="Traditional coverage"><span>Traditional coverage</span></label>
+<label class="choice"><input type="checkbox" name="Top priorities" value="Albums"><span>Beautiful albums</span></label></div></div>
+<div class="field"><label>Any special ideas or requirements?</label><textarea name="Special requirements" placeholder="Tell us about any moments, themes or details you'd love us to capture..."></textarea></div>
+</div>
+<div class="step">
+<h2>Let's find the right fit</h2><p class="sub">Your budget helps us recommend the right coverage without suggesting things you don't need.</p>
+<div class="field"><label>Approximate photography budget <i class="req">*</i></label><div class="choices">
+<label class="choice"><input type="radio" name="Photography budget" value="Below ₹1 lakh" required><span>Below ₹1 lakh</span></label>
+<label class="choice"><input type="radio" name="Photography budget" value="₹1L – ₹1.5L"><span>₹1L – ₹1.5L</span></label>
+<label class="choice"><input type="radio" name="Photography budget" value="₹1.5L – ₹2L"><span>₹1.5L – ₹2L</span></label>
+<label class="choice"><input type="radio" name="Photography budget" value="₹2L – ₹2.5L"><span>₹2L – ₹2.5L</span></label>
+<label class="choice"><input type="radio" name="Photography budget" value="Above ₹2.5L"><span>Above ₹2.5L</span></label>
+<label class="choice"><input type="radio" name="Photography budget" value="Not decided"><span>Not decided yet</span></label></div></div>
+<div class="field"><label>How would you like us to contact you?</label><select name="Preferred contact"><option>WhatsApp</option><option>Phone call</option><option>Email</option></select></div>
+<div class="field"><label><input type="checkbox" required style="width:auto;margin-right:8px">I agree to be contacted about this enquiry.</label></div>
+<div class="error" id="errorBox">We couldn't submit your enquiry. Please try again or contact us on WhatsApp.</div>
+</div>
+<div class="nav"><button type="button" class="btn secondary" id="back" style="visibility:hidden">Back</button><button type="button" class="btn primary" id="next">Continue →</button><button type="submit" class="btn primary" id="submit" style="display:none">Send my enquiry ✨</button></div>
+</form></div>
+<div class="success" id="success"><div class="mark">✧</div><h2>Thank you for sharing your story.</h2><p>We've received your wedding enquiry. We'll be in touch shortly to discuss your celebration.</p><p style="color:var(--gold);font:italic 18px Georgia,serif">Your forever deserves to be remembered beautifully.</p></div>
+</section><div class="footer">Made with care for your once-in-a-lifetime moments · <span id="studio">Kartheek Photography</span></div></main>
+<script>
+const form=document.getElementById('leadForm'),steps=[...document.querySelectorAll('.step')],back=document.getElementById('back'),next=document.getElementById('next'),submit=document.getElementById('submit');let current=0;
+function render(){steps.forEach((s,i)=>s.classList.toggle('active',i===current));back.style.visibility=current===0?'hidden':'visible';next.style.display=current===steps.length-1?'none':'block';submit.style.display=current===steps.length-1?'block':'none';document.getElementById('stepLabel').textContent=`STEP ${current+1} OF ${steps.length}`;document.getElementById('pct').textContent=Math.round((current+1)/steps.length*100)+'%';document.getElementById('progress').style.width=((current+1)/steps.length*100)+'%';}
+function valid(){const fields=[...steps[current].querySelectorAll('input[required],select[required],textarea[required]')];for(const f of fields){if(f.type==='radio'){if(!form.querySelector(`input[name="${f.name}"]:checked`)){f.closest('.field').scrollIntoView({behavior:'smooth'});return false;}}else if(!f.checkValidity()){f.reportValidity();return false;}}return true}
+next.addEventListener('click',()=>{if(valid()){current++;render();window.scrollTo({top:0,behavior:'smooth'});}});
+back.addEventListener('click',()=>{current=Math.max(0,current-1);render();});
+form.addEventListener('submit',async e=>{e.preventDefault();if(!valid())return;submit.disabled=true;submit.textContent='Sending…';try{const data=new URLSearchParams(new FormData(form));const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data.toString()});if(!response.ok)throw new Error('Submission failed');document.getElementById('formArea').style.display='none';document.getElementById('success').style.display='block';}catch(err){document.getElementById('errorBox').style.display='block';submit.disabled=false;submit.textContent='Send my enquiry ✨';}});
+render();
+</script>
+</body></html>
